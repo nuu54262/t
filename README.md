@@ -49,3 +49,16 @@ git pull
 cd
 ls
 cat /etc/passwd
+```
+```console
+pentesterlab@877191309e41:/srv/victim99$ cat /etc/passwd
+...
+victim78:x:1079:1079::/home/victim78:/bin/bash
+victim79:x:1080:1080::/home/victim79:/bin/bash
+victim80:x:1081:1081::/home/victim80:/bin/bash
+victim99:x:1082:1082::/srv/victim99:/bin/bash
+pentesterlab@877191309e41:/srv/victim99$ find /srv/victim99/ -exec grep key {} \;
+grep: /srv/victim99/: Is a directory
+./check_ptlab_key 2213f137-429b-493c-aa92-0aca52af9286
+```
+
